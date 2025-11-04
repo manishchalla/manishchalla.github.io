@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Challa - Developer Portfolio (v2)</title>
     
-    <!-- Font Awesome for icons (Updated Link) -->
+    <!-- Font Awesome for icons (jsDelivr CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     
     <style>
@@ -616,7 +616,7 @@
                         <p>A scalable ETL pipeline using Python and Apache Spark to process 10,000+ e-commerce transactions for analysis.</p>
                         <div class="project-card-footer">
                             <button class="btn-details" data-modal-target="#ecommerce-pipeline-modal">View Details</button>
-                            <a href="https://github.com/mlee2404/CPSC5210-Group4-TestingProject" target="_blank" class="btn-github">View Code</a>
+                             <a href="#" class="btn-github disabled" aria-disabled="true">Private Code</a>
                         </div>
                     </div>
 
@@ -657,6 +657,16 @@
                         <div class="project-card-footer">
                             <button class="btn-details" data-modal-target="#flight-modal">View Details</button>
                             <a href="#" class="btn-github disabled" aria-disabled="true">Private Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Software QA & Testing -->
+                    <div class="project-card">
+                        <h3><i class="fa-solid fa-vial-circle-check"></i> Software QA & Testing Project</h3>
+                        <p>A software quality assurance project involving unit, integration, and end-to-end testing on a full-stack application.</p>
+                        <div class="project-card-footer">
+                            <button class="btn-details" data-modal-target="#qa-modal">View Details</button>
+                            <a href="https://github.com/mlee2404/CPSC5210-Group4-TestingProject" target="_blank" class="btn-github">View Code</a>
                         </div>
                     </div>
 
@@ -742,7 +752,7 @@
             <h2><i class="fa-solid fa-dumbbell"></i> Workout Tracker App</h2>
             <h3>The Solution</h3>
             <ul>
-                <li><strong>Architected a mobile system</strong> combining <strong>Firebase</strong> for real-time UI synchronization and <strong>SQLite</strong> for robust offline data persistence and logging.</li>
+                <li><strong>Architected a mobile system</strong> combining <strong>Firebase</strong> for real-time UI synchronization and <strong>SQLite</strong> for robust offline-first data persistence and logging.</li>
                 <li><strong>Integrated validation routines</strong> to simulate data acquisition from sensory inputs and engineered efficient image handling logic for fast rendering.</li>
             </ul>
             <h3>Tech Stack</h3>
@@ -895,6 +905,28 @@
         </div>
     </div>
 
+    <!-- Modal: Software QA & Testing -->
+    <div class="modal" id="qa-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2><i class="fa-solid fa-vial-circle-check"></i> Software QA & Testing Project</h2>
+            <h3>The Solution</h3>
+            <ul>
+                <li>As part of a team, <strong>performed comprehensive Software Quality Assurance</strong> on a full-stack e-commerce application.</li>
+                <li><strong>Developed and executed test plans</strong> covering <strong>unit testing (JUnit)</strong>, <strong>integration testing</strong>, and <strong>end-to-end testing (Selenium)</strong>.</li>
+                <li>Identified, documented, and tracked bugs; performed regression testing to validate fixes.</li>
+            </ul>
+            <h3>Tech Stack</h3>
+            <div class="skills-grid">
+                <div class="skill-item">QA Testing</div>
+                <div class="skill-item">Selenium</div>
+                <div class="skill-item">JUnit</div>
+                <div class="skill-item">Test Planning</div>
+                <div class="skill-item">Bug Tracking</div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal-overlay"></div>
 
     <script>
@@ -937,7 +969,7 @@
             });
 
             // --- Scrollspy & Fade-in Logic ---
-            const sections = document.querySelectorAll('section[data-section]');
+            const sections = document.querySelectorAll('section[data-section], header[data-section]'); // Include header
             const navLinks = document.querySelectorAll('.nav-links .nav-link');
             
             const activateNavLink = (id) => {
@@ -961,16 +993,11 @@
             // Intersection Observer for scrollspy
             const scrollspyObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
-                    // Check for hero section separately
-                    if(entry.target.id === 'hero' && entry.isIntersecting) {
-                         activateNavLink('hero');
-                    }
-                    // For other sections
-                    else if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
                         activateNavLink(entry.target.id);
                     }
                 });
-            }, { threshold: [0.1, 0.5] }); // Use multiple thresholds
+            }, { threshold: 0.5 }); // Use a 50% threshold for activation
 
             // Observe all sections
             sections.forEach(section => {
@@ -978,9 +1005,14 @@
                 scrollspyObserver.observe(section);
             });
             
-            // Observe hero section
+            // Observe hero section separately for fade-in
             const heroSection = document.getElementById('hero');
             if(heroSection) {
+                // Manually trigger fade-in for hero as it's at the top
+                setTimeout(() => {
+                    heroSection.classList.add('is-visible');
+                }, 100); 
+                // Observe for scrollspy
                 scrollspyObserver.observe(heroSection);
             }
 
@@ -988,5 +1020,3 @@
     </script>
 </body>
 </html>
-
-
