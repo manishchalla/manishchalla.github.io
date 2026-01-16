@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Challa - Developer Portfolio (v2)</title>
     
-    <!-- Font Awesome for icons (jsDelivr CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     
     <style>
@@ -521,7 +520,6 @@
 </head>
 <body>
     
-    <!-- ===== TOP NAVIGATION ===== -->
     <nav class="top-nav">
         <div class="nav-logo">
             <a href="#">Manish Challa</a>
@@ -536,25 +534,15 @@
         </div>
     </nav>
 
-    <!-- ===== MAIN CONTENT WRAPPER ===== -->
     <div class="content-wrapper">
 
-        <!-- ===== HERO SECTION ===== -->
         <header id="hero">
             <h1 class="hero-title">Manish Kumar Reddy Challa</h1>
             <h2 class="hero-subtitle">Data Engineer | ML Engineer | Full-Stack Developer</h2>
-            <!-- <p class="hero-about">
-                I'm a Data Engineer with a Master's in CS, specializing in building end-to-end data solutions.
-                From <strong>cloud-native platforms (Azure, GCP)</strong> to <strong>full-stack applications (Node.js, React)</strong>,
-                I turn complex data into actionable insights.
-            </p> -->
             <div class="social-links">
                 <a href="https://github.com/manishchalla" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <!--<a href="https://linkedin.com/in/manish-kumar-reddy-challa" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a> -->
                 <a href="mailto:manishchalla13@gmail.com" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
@@ -562,7 +550,6 @@
         </header>
 
         <main>
-            <!-- ===== EXPERIENCE SECTION ===== -->
             <section id="experience" data-section>
                 <h2>Experience</h2>
                 
@@ -571,26 +558,20 @@
                         <h3>Data Engineer</h3>
                         <span>Aug 2021 – Jul 2023</span>
                     </div>
-                    <div class="experience-subheader">LTIMindtree | Hyderabad, IN</div>
+                    <div class="experience-subheader">LTIMindtree | Hyderabad, India</div>
 
                     <div class="experience-project">
-                        <h4>Food Aggregator Data Platform</h4>
-                        <p>Azure | Databricks | BigQuery | Looker Studio</p>
+                        <h4>Data Engineering & Analytics (VCG Team)</h4>
+                        <p>Azure | Python | SQL | Power BI | Tableau</p>
                         <ul>
-                            <li><strong>Architected and deployed</strong> an end-to-end cloud data platform, ingesting hourly API feeds (Orders, Deliveries, Ratings) into <strong>Azure Data Lake Gen2</strong>.</li>
-                            <li><strong>Developed and automated PySpark ETL pipelines</strong> in Azure Databricks to cleanse, transform, and integrate multi-source JSON data into <strong>Google BigQuery</strong>.</li>
-                            <li><strong>Engineered SLA intelligence</strong> by computing 90th-percentile delivery times and <strong>automated customer compensation logic</strong>.</li>
-                            <li>Delivered live Looker dashboards for revenue, delay, and loyalty, <strong>reducing manual SLA tracking by 80%</strong> and improving payout accuracy to <strong>99%</strong>.</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-project">
-                        <h4>Retail Sales Analytics Pipeline</h4>
-                        <p>Python | SQL | Azure | Power BI</p>
-                        <ul>
-                            <li><strong>Developed scalable ETL pipelines</strong> to ingest and model sales, inventory, and POS data from diverse retail systems into a <strong>central Azure data warehouse</strong>.</li>
-                            <li><strong>Authored unified analytics models</strong> to track key metrics including <strong>stock levels, returns, and store-level demand</strong>.</li>
-                            <li><strong>Built interactive Power BI dashboards</strong> for category managers, providing store-level demand visibility and enabling data-driven inventory decisions.</li>
+                            <li><strong>Maintained and supported daily ETL pipelines</strong> in Azure Data Factory, monitoring execution logs and fixing failures to ensure data availability for the reporting team.</li>
+                            <li><strong>Wrote and optimized SQL queries</strong> to extract project tracking data from Jira and internal finance systems, creating clean datasets for downstream reporting.</li>
+                            <li><strong>Automated manual data entry tasks</strong> using Python scripts to fetch status updates from APIs, saving the team ~5 hours of manual work per week.</li>
+                            <li><strong>Developed and updated Power BI dashboards</strong> for the VCG team, creating specific visualizations for RAG status and budget tracking as requested by senior managers.</li>
+                            <li><strong>Assisted in the migration from Power BI to Tableau</strong> by recreating existing reports, rewriting underlying SQL views, and validating that the numbers matched the legacy systems.</li>
+                            <li><strong>Performed daily data quality checks</strong>, identifying missing values or duplicates in the source data and working with project managers to correct data entry errors.</li>
+                            <li><strong>Created documentation</strong> for data dictionaries and table schemas to help business users understand the meaning of specific metrics in the reports.</li>
+                            <li><strong>Supported month-end reporting cycles</strong> by running manual data extracts and generating Excel summaries for the Steering Committee presentations.</li>
                         </ul>
                     </div>
                 </div>
@@ -600,7 +581,7 @@
                         <h3>Graduate Trainee</h3>
                         <span>Jan 2021 – Jul 2021</span>
                     </div>
-                    <div class="experience-subheader">LTIMindtree | Mumbai, IN</div>
+                    <div class="experience-subheader">LTIMindtree | Mumbai, India</div>
                     
                     <div class="experience-project">
                         <h4>Internal Asset Management Portal</h4>
@@ -614,12 +595,10 @@
                 </div>
             </section>
                 
-            <!-- ===== PROJECTS SECTION ===== -->
             <section id="projects" data-section>
                 <h2>Projects</h2>
                 <div class="project-grid">
 
-                    <!-- Project Card: Booksnap -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-book-bookmark"></i> Booksnap (ML Full-Stack)</h3>
                         <p>A full-stack app with a Node.js backend, React frontend, and CI/CD pipeline, built with a microservices approach.</p>
@@ -629,7 +608,6 @@
                         </div>
                     </div>
                     
-                    <!-- Project Card: Workout Tracker -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-dumbbell"></i> Workout Tracker App</h3>
                         <p>A mobile app with real-time sync and robust offline-first data persistence using Flutter, Firebase, and SQLite.</p>
@@ -639,7 +617,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: Real-Time Chat -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-comments"></i> Real-Time Chat App</h3>
                         <p>A high-performance Flutter messaging app using Firebase Realtime Database, achieving sub-300ms sync latency.</p>
@@ -649,7 +626,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: AI Medical Assistant -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-brain"></i> AI-Driven Medical Assistant</h3>
                         <p>An AI prototype leveraging GPT and RAG to suggest diagnoses from text, achieving ~88% accuracy on test data.</p>
@@ -659,7 +635,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: E-commerce Pipeline -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-database"></i> E-commerce Analytics Pipeline</h3>
                         <p>A scalable ETL pipeline using Python and Apache Spark to process 10,000+ e-commerce transactions for analysis.</p>
@@ -669,7 +644,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: Sumazon -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-cart-shopping"></i> Sumazon E-Commerce Platform</h3>
                         <p>A full-stack e-commerce website built with React, Node.js, and SQL, managing users, products, and orders.</p>
@@ -679,7 +653,6 @@
                         </div>
                     </div>
                     
-                    <!-- Project Card: Brick Breaker -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-gamepad"></i> Brick Breaker Game</h3>
                         <p>A 2D game engine built from scratch in C++, featuring custom physics, collision detection, and component-based design.</p>
@@ -689,7 +662,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: Movie Poster Gallery -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-film"></i> Movie Poster Gallery</h3>
                         <p>A modular .NET Core desktop app with dependency injection and offline support using a local SQLite database.</p>
@@ -699,7 +671,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: Flight Price Prediction -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-plane-departure"></i> Flight Price Prediction</h3>
                         <p>An end-to-end ML pipeline using Scikit-learn and deployed as a Flask API on Heroku to forecast flight prices.</p>
@@ -709,7 +680,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card: Software QA & Testing -->
                     <div class="project-card">
                         <h3><i class="fa-solid fa-vial-circle-check"></i> Software QA & Testing Project</h3>
                         <p>A software quality assurance project involving unit, integration, and end-to-end testing on a full-stack application.</p>
@@ -722,79 +692,102 @@
                 </div>
             </section>
 
-            <!-- ===== SKILLS SECTION ===== -->
             <section id="skills" data-section>
                 <h2>Skills</h2>
                 <div class="skills-grid">
+                    
                     <div class="skill-category">
-                        <h3>Programming</h3>
+                        <h3>Languages</h3>
                         <div class="skill-item">Python</div>
                         <div class="skill-item">SQL</div>
-                        <div class="skill-item">JavaScript</div>
                         <div class="skill-item">C++</div>
-                        <div class="skill-item">Flutter</div>
+                        <div class="skill-item">JavaScript/TypeScript</div>
+                        <div class="skill-item">Dart</div>
                     </div>
+
                     <div class="skill-category">
-                        <h3>Backend & DevOps</h3>
+                        <h3>Data Engineering</h3>
+                        <div class="skill-item">PySpark</div>
+                        <div class="skill-item">Apache Spark</div>
+                        <div class="skill-item">AWS Glue</div>
+                        <div class="skill-item">Azure Data Factory (ADF)</div>
+                        <div class="skill-item">ETL/ELT Pipelines</div>
+                        <div class="skill-item">Data Modeling</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Cloud Platforms</h3>
+                        <div class="skill-item">AWS (General)</div>
+                        <div class="skill-item">S3</div>
+                        <div class="skill-item">Redshift</div>
+                        <div class="skill-item">Athena</div>
+                        <div class="skill-item">EC2</div>
+                        <div class="skill-item">IAM</div>
+                        <div class="skill-item">Lambda</div>
+                        <div class="skill-item">Azure (General)</div>
+                        <div class="skill-item">Data Lake Gen2</div>
+                        <div class="skill-item">Synapse Analytics</div>
+                        <div class="skill-item">Azure SQL</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Visualization & Analytics</h3>
+                        <div class="skill-item">Power BI (DAX)</div>
+                        <div class="skill-item">Tableau</div>
+                        <div class="skill-item">AWS QuickSight</div>
+                        <div class="skill-item">Advanced Excel</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-item">NLP (RAG, Hugging Face)</div>
+                        <div class="skill-item">GPT Models</div>
+                        <div class="skill-item">PyTorch</div>
+                        <div class="skill-item">Scikit-learn</div>
+                        <div class="skill-item">Pandas</div>
+                        <div class="skill-item">NumPy</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web & Backend</h3>
                         <div class="skill-item">Node.js (Express)</div>
-                        <div class="skill-item">.NET Core</div>
                         <div class="skill-item">Flask</div>
-                        <div class="skill-item">REST APIs</div>
+                        <div class="skill-item">React.js</div>
+                        <div class="skill-item">RESTful APIs</div>
                         <div class="skill-item">Microservices</div>
                         <div class="skill-item">Docker</div>
                         <div class="skill-item">Kubernetes</div>
                         <div class="skill-item">CI/CD</div>
-                        <div class="skill-item">AWS</div>
-                        <div class="skill-item">Azure</div>
-                        <div class="skill-item">Heroku</div>
                     </div>
-                    <div class="skill-category">
-                        <h3>ML & GenAI</h3>
-                        <div class="skill-item">PyTorch</div>
-                        <div class="skill-item">Scikit-learn</div>
-                        <div class="skill-item">Hugging Face</div>
-                        <div class="skill-item">Pandas</div>
-                        <div class="skill-item">NLP</div>
-                        <div class="skill-item">RAG</div>
-                        <div class="skill-item">Statistical Modeling</div>
-                        <div class="skill-item">PySpark</div>
-                    </div>
+
                     <div class="skill-category">
                         <h3>Databases</h3>
                         <div class="skill-item">PostgreSQL</div>
                         <div class="skill-item">MySQL</div>
-                        <div class="skill-item">Firebase</div>
                         <div class="skill-item">SQLite</div>
+                        <div class="skill-item">Firebase</div>
+                        <div class="skill-item">Amazon Redshift</div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <div class="skill-item">React.js</div>
-                        <div class="skill-item">HTML</div>
-                        <div class="skill-item">CSS</div>
-                    </div>
+
                 </div>
             </section>
 
-            <!-- ===== CERTIFICATIONS SECTION ===== -->
             <section id="certifications" data-section>
                 <h2><i class="fas fa-award icon-left"></i>Certifications & Badges</h2>
                 <div class="cert-grid">
                     
-                    <!-- Badge 1: GenAI -->
                     <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=A04EA0ABCD2002D0241E9A3594C67F5205FA481839122FD16EB6B8AC8F98C55B" target="_blank" rel="noopener noreferrer" class="cert-card">
                         <i class="fas fa-brain"></i>
                         <h3>OCI Generative AI Foundations Associate</h3>
                         <p>Oracle Certified</p>
                     </a>
     
-                    <!-- Badge 2: OCI Foundations -->
                     <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=70D392388034F77B494D283DB1CF359BC8015CBEF769ADBED49D9D4F878B0E15" target="_blank" rel="noopener noreferrer" class="cert-card">
                         <i class="fas fa-cloud"></i>
                         <h3>OCI Foundations Associate</h3>
                         <p>Oracle Certified</p>
                     </a>
     
-                    <!-- Badge 3: Data Management -->
                     <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=264FB45F397117BF00D46221505B81E217DDA70A012D91B4A82F1B72AA7A4EAF" target="_blank" rel="noopener noreferrer" class="cert-card">
                         <i class="fas fa-database"></i>
                         <h3>OCI Data Management Foundations Associate</h3>
@@ -804,7 +797,6 @@
                 </div>
             </section>
 
-            <!-- ===== CONTACT SECTION ===== -->
             <section id="contact" data-section>
                 <h2>Get In Touch</h2>
                 <div class="contact-links">
@@ -820,10 +812,6 @@
         </main>
     </div>
 
-    <!-- ===== MODALS (POP-UPS) ===== -->
-    <!-- All modals are styled for dark mode -->
-
-    <!-- Modal: Workout Tracker -->
     <div class="modal" id="workout-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -842,7 +830,6 @@
         </div>
     </div>
 
-    <!-- Modal: Real-Time Chat -->
     <div class="modal" id="chat-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -862,7 +849,6 @@
         </div>
     </div>
 
-    <!-- Modal: AI Medical Assistant -->
     <div class="modal" id="ai-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -883,7 +869,6 @@
         </div>
     </div>
     
-    <!-- Modal: E-commerce Pipeline -->
     <div class="modal" id="ecommerce-pipeline-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -903,7 +888,6 @@
         </div>
     </div>
     
-    <!-- Modal: Sumazon -->
     <div class="modal" id="sumazon-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -924,7 +908,6 @@
         </div>
     </div>
 
-    <!-- Modal: Brick Breaker -->
     <div class="modal" id="brick-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -942,7 +925,6 @@
         </div>
     </div>
 
-    <!-- Modal: Movie Poster Gallery -->
     <div class="modal" id="movie-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -962,7 +944,6 @@
         </div>
     </div>
 
-    <!-- Modal: Flight Price Prediction -->
     <div class="modal" id="flight-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -983,7 +964,6 @@
         </div>
     </div>
 
-    <!-- Modal: Software QA & Testing -->
     <div class="modal" id="qa-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
@@ -1005,7 +985,6 @@
         </div>
     </div>
 
-    <!-- Modal: Booksnap -->
     <div class="modal" id="booksnap-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
